@@ -7,7 +7,7 @@
   <body>
     <header class="sedona-header">
       <nav class="header-navigation">
-        <a class="header-logo">
+        <a class="header-logo" href="index.html">
           <img src="img/logo.svg" width="100" height="100" alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
@@ -21,44 +21,77 @@
     <main class="hostel-main">
       <h1>ГОСТИНИЦЫ</h1>
       <section class="main-hostle-filters">
+        <h2 class="visually-hidden">ФИЛЬТР ГОСТИНИЦ</h2>
         <!--Форма фильтра-->
-        <h2>ФИЛЬТР ГОСТИНИЦ</h2>
-        <div class="hostle-checkbox">
-          <h3>ИФРАСТРУКТУРА</h3>
-          <ul>
-            <li><input type="checkbox" name="Бассейн"></li>
-            <li><input type="checkbox" name="Парковка"></li>
-            <li><input type="checkbox" name="WI-FI"></li>
-          </ul>
-          <h3>ТИП ЖИЛЬЯ</h3>
-          <ul>
-            <li><input type="checkbox" name="Гостиница"></li>
-            <li><input type="checkbox" name="Мотель"></li>
-            <li><input type="checkbox" name="Апартаменты"></li>
-          </ul>
-        </div>
-        <div class="hostle-scroll">
-          <h3>СТОИМОСТЬ В СУТКИ(Р):</h3>
-          <!--Scroll-->
-          <input type="submit" name="ПОКАЗАТЬ">
-        </div>
+        <form class="hostle-filters-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <fieldset>
+                <legend><h3>ИНФРАСТРУКТУРА</h3></legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="filters-Pool-checkbox" name="Pool"/>
+                    <label for="filters-Pool-checkbox">БАССЕЙН</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filters-Parking-checkbox" name="Parking"/>
+                    <label for="filters-Parking-checkbox">ПАРКОВКА</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI">
+                    <label for="filters-WiFi-checkbox">WI-FI</label>
+                  </li>
+                </ul>
+                </fieldset>
+                <fieldset>
+                <legend><h3>ТИП ЖИЛЬЯ</h3></legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="filters-Hostel-checkbox" name="Hostel"/>
+                    <label for="filters-Hostel-checkbox">ГОСТИНИЦА</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filters-Motel-checkbox" name="Motel"/>
+                    <label for="filters-Motel-checkbox">МОТЕЛЬ</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament"/>
+                    <label for="filters-Apartament-checkbox">АПАРТАМЕНЫ</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend><h3>СТОИМОСТЬ В СУТКИ(Р):</h3></legend>
+              <input type="range" name="price-range" value="1500" min="0" max="3000">
+              <button type="submit" name="show">ПОКАЗАТЬ</button>
+            </fieldset>
+        </form>
       </section>
       <section class="hostel-sort">
-        <h2>СОРТИРОВКА ГОСТИНИЦ</h2>
+        <h2 class="visually-hidden">СОРТИРОВКА ГОСТИНИЦ</h2>
         <span><b>НАЙДЕНО:</b></span>
         <h3>СОРТИРОВКА:</h3>
         <ul>
-          <li><input type="radio" name="ПО ЦЕНЕ" value=""></li>
-          <li><input type="radio" name="ПО ТИПУ" value=""></li>
-          <li><input type="radio" name="ПО РЕЙТИНГУ" value=""></li>
+          <li>
+            <input type="radio" id="sort-price-radio" name="hostel-sort-radio" value="">
+            <label for="sort-price-radio">ПО ЦЕНЕ</label>
+          </li>
+          <li>
+            <input type="radio" id="sort-type-radio" name="hostel-sort-radio" value="">
+            <label for="sort-type-radio">ПО ТИПУ</label>
+          </li>
+          <li>
+            <input type="radio" id="sort-rate-radio" name="hostel-sort-radio" value="">
+            <label for="sort-rate-radio">ПО РЕЙТИНГУ</label>
+          </li>
         </ul>
         <div class="sort-buttons">
-          <input type="radio" name="UP" value="">
-          <input type="radio" name="DOWN" value="">
+          <input type="radio" name="up-down" value="">
+          <input type="radio" name="up-down" value="">
         </div>
       </section>
       <section class="hostels-section">
-        <h2>СПИСОК ГОСТИНИЦ</h2>
+        <h2 class="visually-hidden">СПИСОК ГОСТИНИЦ</h2>
         <ul class="hostel-list">
           <li>
             <div class="hostel-item">

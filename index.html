@@ -77,16 +77,28 @@
         <div class="offers-hotel">
           <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
           <!--Форма для отправки данных-->
-          <ul>
-            <li>ДАТА ЗАЕЗДА</li>
-            <li>ДАТА ВЫЕЗДА</li>
-            <li>ВЗРОСЛЫЕ</li>
-            <li>ДЕТИ</li>
-          </ul>
-          <button type="submit" name="НАЙТИ"></button>
+          <form class="offers-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="offers-date-in">ДАТА ЗАЕЗДА</label>
+              <input required type="text" id="offers-date-in" name="date-in" value="" placeholder="24 апреля 2017"/><br>
+            </p>
+            <p>
+              <label for="offers-date-out">ДАТА ВЫЕЗДА</label>
+              <input required type="text" id="offers-date-out" name="date-out" value="" placeholder="04 июля 2017"/><br>
+            </p>
+            <p>
+              <label for="offers-elder">ВЗРОСЛЫЕ</label>
+              <input type="number" id="offers-elder" name="elder" value="0"/>
+            </p>
+            <p>
+              <label for="offers-child">ДЕТИ</label>
+              <input type="number" id="offers-child" name="child" value="0"/>
+            </p>
+            <button type="submit" class="offers-find" name="find">НАЙТИ</button>
+          </form>
         </div>
         <div class="offers-map">
-          <img src="img/map.jpg" width="100%" height="100%" alt="Карта Седоны">
+          <img src="img/map.jpg" width="600" height="200" alt="Карта Седоны">
         </div>
       </section>
     </main>
