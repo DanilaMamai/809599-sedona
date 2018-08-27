@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <base href="https://htmlacademy-htmlcss.github.io/809599-sedona/4/">
+    <base href="https://htmlacademy-htmlcss.github.io/809599-sedona/4/"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
   <body>
     <header class="sedona-header">
@@ -25,47 +27,45 @@
         <h2 class="visually-hidden">ФИЛЬТР ГОСТИНИЦ</h2>
         <!--Форма фильтра-->
         <form class="hostle-filters-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <fieldset>
-                <legend><h3>ИНФРАСТРУКТУРА</h3></legend>
-                <ul>
-                  <li>
-                    <input type="checkbox" id="filters-Pool-checkbox" name="Pool"/>
-                    <label for="filters-Pool-checkbox">БАССЕЙН</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="filters-Parking-checkbox" name="Parking"/>
-                    <label for="filters-Parking-checkbox">ПАРКОВКА</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI">
-                    <label for="filters-WiFi-checkbox">WI-FI</label>
-                  </li>
-                </ul>
-                </fieldset>
-                <fieldset>
-                <legend><h3>ТИП ЖИЛЬЯ</h3></legend>
-                <ul>
-                  <li>
-                    <input type="checkbox" id="filters-Hostel-checkbox" name="Hostel"/>
-                    <label for="filters-Hostel-checkbox">ГОСТИНИЦА</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="filters-Motel-checkbox" name="Motel"/>
-                    <label for="filters-Motel-checkbox">МОТЕЛЬ</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament"/>
-                    <label for="filters-Apartament-checkbox">АПАРТАМЕНЫ</label>
-                  </li>
-                </ul>
-              </fieldset>
+          <fieldset>
+            <legend><h3>ИНФРАСТРУКТУРА</h3></legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="filters-Pool-checkbox" name="Pool"/>
+                <label for="filters-Pool-checkbox">БАССЕЙН</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filters-Parking-checkbox" name="Parking"/>
+                <label for="filters-Parking-checkbox">ПАРКОВКА</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI">
+                <label for="filters-WiFi-checkbox">WI-FI</label>
+              </li>
+            </ul>
             </fieldset>
             <fieldset>
-              <legend><h3>СТОИМОСТЬ В СУТКИ(Р):</h3></legend>
-              <input type="range" name="price-range" value="1500" min="0" max="3000">
-              <button type="submit" name="show">ПОКАЗАТЬ</button>
-            </fieldset>
+            <legend><h3>ТИП ЖИЛЬЯ</h3></legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="filters-Hostel-checkbox" name="Hostel"/>
+                <label for="filters-Hostel-checkbox">ГОСТИНИЦА</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filters-Motel-checkbox" name="Motel"/>
+                <label for="filters-Motel-checkbox">МОТЕЛЬ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament"/>
+                <label for="filters-Apartament-checkbox">АПАРТАМЕНЫ</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><h3>СТОИМОСТЬ В СУТКИ(Р):</h3></legend>
+            <input type="range" name="price-range" value="1500" min="0" max="3000">
+            <button type="submit" name="show">ПОКАЗАТЬ</button>
+          </fieldset>
         </form>
       </section>
       <section class="hostel-sort">
@@ -74,21 +74,18 @@
         <h3>СОРТИРОВКА:</h3>
         <ul>
           <li>
-            <input type="radio" id="sort-price-radio" name="hostel-sort-radio" value="">
-            <label for="sort-price-radio">ПО ЦЕНЕ</label>
+            <a href="#">ПО ЦЕНЕ</a>
           </li>
           <li>
-            <input type="radio" id="sort-type-radio" name="hostel-sort-radio" value="">
-            <label for="sort-type-radio">ПО ТИПУ</label>
+            <a href="#">ПО ТИПУ</a>
           </li>
           <li>
-            <input type="radio" id="sort-rate-radio" name="hostel-sort-radio" value="">
-            <label for="sort-rate-radio">ПО РЕЙТИНГУ</label>
+            <a href="#">ПО РЕЙТИНГУ</a>
           </li>
         </ul>
         <div class="sort-buttons">
-          <input type="radio" name="up-down" value="">
-          <input type="radio" name="up-down" value="">
+          <a href="#">UP</a>
+          <a href="#">DOWN</a>
         </div>
       </section>
       <section class="hostels-section">
@@ -99,11 +96,11 @@
               <img src="img/hotels-image1.jpg" width="200" height="100" alt="Гостиница">
               <h3><a href="#">AMARA RESORT & SPA</a></h3>
               <p>
-                <span>ГОСТИНИЦА</span><br>
+                <span>ГОСТИНИЦА</span>
                 <a href="#">Подробнее</a>
               </p>
               <p>
-                <span>ОТ 4000 Р.</span><br>
+                <span>ОТ 4000 Р.</span>
                 <a href="#">Забронировать</a>
               </p>
             </div>
@@ -116,11 +113,11 @@
               <img src="img/hotels-image2.jpg" width="200" height="100" alt="Мотель">
               <h3><a href="#">DESERT QUAIL INN</a></h3>
               <p>
-                <span>МОТЕЛЬ</span><br>
+                <span>МОТЕЛЬ</span>
                 <a href="#">Подробнее</a>
               </p>
               <p>
-                <span>ОТ 3000 Р.</span><br>
+                <span>ОТ 3000 Р.</span>
                 <a href="#">Забронировать</a>
               </p>
             </div>
@@ -133,11 +130,11 @@
               <img src="img/hotels-image3.jpg" width="200" height="100" alt="Апартаменты">
               <h3><a href="#">VILLAS AT POCO DIABLO</a></h3>
               <p>
-                <span>АПАРТАМЕНТЫ</span><br>
+                <span>АПАРТАМЕНТЫ</span>
                 <a href="#">Подробнее</a>
               </p>
               <p>
-                <span>ОТ 2000 Р.</span><br>
+                <span>ОТ 2000 Р.</span>
                 <a href="#">Забронировать</a>
               </p>
             </div>
