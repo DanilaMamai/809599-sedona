@@ -27,13 +27,14 @@ a {
 
 .header-navigation {
   width: 1200px;
+  position: relative;
 }
 
 /*Логотип*/
 
 .main-header-logo {
   position: absolute;
-  left: 690px;
+  left: 44.5%;
 }
 
 /*Навигационное меню*/
