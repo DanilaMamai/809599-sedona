@@ -26,7 +26,7 @@ a {
 }
 
 .header-navigation {
-  width: 1056px;
+  width: 1200px;
 }
 
 /*Логотип*/
@@ -119,6 +119,7 @@ a:active {
 
 .main-head {
   background: url('../img/main-logo.jpg');
+  background-color: #637887;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,19 +206,7 @@ a:active {
 
 .services-content {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
   width: 304px;
   margin-bottom: 10px;
 }
@@ -331,34 +320,21 @@ a:active {
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-height: 142px;
   width: 300px;
   margin-top: -15px;
-}
-
-.content h3 {
-  width: 151px;
-  margin: 0;
   text-align: center;
 }
 
-.content p {
-  width: 302px;
-  margin: 26px 0 0 0;
+.content h3 {
+  margin: 0;
+  padding: 0 74.5px;
+  text-align: center;
 }
 
 .last p {
-  width: 265px;
+  margin: 26px 0 0 0;
+  padding: 0 15px;
 }
 
 /*offers*/
