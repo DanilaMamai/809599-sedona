@@ -795,6 +795,7 @@ a:active {
 .main-hostle-filters {
   width: 1200px;
   background-image: url('../img/filter-bg.jpg');
+  background-color: #425463;
   background-position: center -100px;
 }
 
