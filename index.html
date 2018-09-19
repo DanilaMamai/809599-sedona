@@ -10,19 +10,15 @@
   <body>
     <header class="sedona-header">
       <nav class="header-navigation">
+        <ul class="nav-items">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hostel.html">Гостиницы</a></li>
+        </ul>
         <a class="main-header-logo">
           <img src="img/logo.png" width="140" height="71" alt="Логотип Седона">
         </a>
-        <div class="navigation-list-containter">
-          <ul class="left-items">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-          </ul>
-          <ul class="right-items">
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hostel.html">Гостиницы</a></li>
-          </ul>
-        </div>
       </nav>
     </header>
     <main class="sedona-main">
@@ -70,8 +66,8 @@
           <li class="advantages-item">
             <img src="img/adv-img2.jpg" width="800" height="256" alt="Седона 2 фотография">
             <div class="advantages-item-content">
-              <div class="content">
-                <h3>там есть мост дьявола</h3>
+              <div class="">
+                <h3>там есть<br>мост дьявола</h3>
                 <p>- №2 -</p>
                 <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
               </div>
@@ -131,7 +127,7 @@
                     <label for="offers-elder">взрослые:</label>
                     <div class="input-number">
                       <input type="submit" class="btn elder-minus" name="elder-minus" value="-"/>
-                      <input type="text" id="offers-elder" class="offers-input" name="elder" placeholder="0" disabled/>
+                      <input type="number" id="offers-elder" class="offers-input" name="elder" placeholder="0" disabled/>
                       <input type="submit" class="btn elder-plus" name="elder-plus" value="+"/>
                     </div>
                   </div>
@@ -139,7 +135,7 @@
                     <label for="offers-child">дети:</label>
                     <div class="input-number">
                       <input type="submit" class="btn childs-minus" name="child-minus" value="-"/>
-                      <input type="text" id="offers-child" class="offers-input" name="child" placeholder="0" disabled/>
+                      <input type="number" id="offers-child" class="offers-input" name="child" placeholder="0" disabled/>
                       <input type="submit" class="btn childs-plus" name="child-plus" value="+"/>
                     </div>
                   </div>
@@ -156,9 +152,7 @@
     </main>
     <footer class="sedona-footer">
       <div class="footer-visit">
-        <p>
-            <a href="#hash">#visitsedona</a>
-        </p>
+          <a href="#hash">#visitsedona</a>
       </div>
       <div class="footer-social">
         <ul class="social-list">

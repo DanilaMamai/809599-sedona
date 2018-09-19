@@ -10,19 +10,15 @@
   <body>
     <header class="sedona-header">
       <nav class="header-navigation">
+        <ul class="nav-items">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#" class="nav-active-item">Гостиницы</a></li>
+        </ul>
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.png" width="140" height="71" alt="Логотип Седона">
         </a>
-        <div class="navigation-list-containter">
-          <ul class="left-items">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-          </ul>
-          <ul class="right-items">
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#" class="nav-active-item">Гостиницы</a></li>
-          </ul>
-        </div>
       </nav>
     </header>
     <main class="hostel-main">
@@ -42,7 +38,7 @@
                 <label for="filters-Parking-checkbox">парковка</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI">
+                <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI" disabled>
                 <label for="filters-WiFi-checkbox">wi-fi</label>
               </li>
             </ul>
@@ -59,7 +55,7 @@
                 <label for="filters-Motel-checkbox">мотель</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament" checked/>
+                <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament" checked disabled/>
                 <label for="filters-Apartament-checkbox">апартамены</label>
               </li>
             </ul>
@@ -69,14 +65,14 @@
             <div class="show-container">
               <table>
                 <tr>
-                  <td>от 0</td>
-                  <td>до 3000</td>
+                  <td><input type="text" name="" value="от 0"/></td>
+                  <td><input type="text" name="" value="до 3000"/></td>
                 </tr>
               </table>
               <div class="range">
-                <div class="thumb">
+                <div class="thumb" tabindex="1">
                 </div>
-                <div class="thumb">
+                <div class="thumb" tabindex="2">
                 </div>
               </div>
               <button type="submit" name="show">показать</button>
@@ -104,10 +100,10 @@
           </div>
           <div class="sort-buttons">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/><text></text></svg>
             </a>
             <a class="sorted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/><title></title></svg>
             </a>
           </div>
         </div>
@@ -198,9 +194,7 @@
     </main>
     <footer class="sedona-footer">
       <div class="footer-visit">
-        <p>
-            <a href="#hash">#visitsedona</a>
-        </p>
+          <a href="#hash">#visitsedona</a>
       </div>
       <div class="footer-social">
         <ul class="social-list">
