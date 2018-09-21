@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
 </head>
   <body>
     <header class="sedona-header">
@@ -30,15 +30,15 @@
             <legend><h3>инфраструктура:</h3></legend>
             <ul>
               <li>
-                <input type="checkbox" id="filters-Pool-checkbox" name="Pool" checked/>
+                <input type="checkbox" tabindex="0" id="filters-Pool-checkbox" name="Pool" checked/>
                 <label for="filters-Pool-checkbox">бассейн</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-Parking-checkbox" name="Parking"/>
+                <input type="checkbox" tabindex="0" id="filters-Parking-checkbox" name="Parking"/>
                 <label for="filters-Parking-checkbox">парковка</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-WiFi-checkbox" name="WI-FI" disabled>
+                <input type="checkbox" tabindex="0" id="filters-WiFi-checkbox" name="WI-FI" disabled>
                 <label for="filters-WiFi-checkbox">wi-fi</label>
               </li>
             </ul>
@@ -47,15 +47,15 @@
             <legend><h3>тип жилья:</h3></legend>
             <ul>
               <li>
-                <input type="checkbox" id="filters-Hostel-checkbox" name="Hostel" checked/>
+                <input type="checkbox" tabindex="0" id="filters-Hostel-checkbox" name="Hostel" checked/>
                 <label for="filters-Hostel-checkbox">гостиница</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-Motel-checkbox" name="Motel" checked/>
+                <input type="checkbox" tabindex="0" id="filters-Motel-checkbox" name="Motel" checked/>
                 <label for="filters-Motel-checkbox">мотель</label>
               </li>
               <li>
-                <input type="checkbox" id="filters-Apartament-checkbox" name="Apartament" checked disabled/>
+                <input type="checkbox" tabindex="0" id="filters-Apartament-checkbox" name="Apartament" checked disabled/>
                 <label for="filters-Apartament-checkbox">апартамены</label>
               </li>
             </ul>
@@ -70,9 +70,9 @@
                 </tr>
               </table>
               <div class="range">
-                <div class="thumb" tabindex="1">
+                <div class="thumb" area-label="Ползунок 1" tabindex="0">
                 </div>
-                <div class="thumb" tabindex="2">
+                <div class="thumb" area-label="Ползунок 2" tabindex="0">
                 </div>
               </div>
               <button type="submit" name="show">показать</button>
@@ -100,10 +100,10 @@
           </div>
           <div class="sort-buttons">
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/><text></text></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/><title>Сортировка вверх</title></svg>
             </a>
             <a class="sorted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/><title></title></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/><title>Сортировка вниз</title></svg>
             </a>
           </div>
         </div>
